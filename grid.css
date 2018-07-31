@@ -1,0 +1,336 @@
+
+/*this is wrapper, a grid layout 'Abril Fatface', cursive;*/
+.wrapper{
+    background:#F4F4F4;
+    margin:auto;
+    border: 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(1fr);
+    grid-gap: 0.5em 0em 0.5em 0em;
+    grid-template-areas:"menu . . hotzone hotzone hotzone"
+                        "header header header header header header"
+                        "panel content content content content banner"
+                        "panel content content content content ."
+                        "footer footer footer footer footer footer"
+                
+}
+/* EX
+  RESIZE THE FONT AND textbox
+/* this lines are for homepage */
+body{
+    background: #EFEFEF;
+}
+#top{
+    display: none;
+    position: fixed;
+    z-index: 99;
+}
+.hotzone ul{
+    list-style-type:none;
+    margin : 0px;
+    paddingL 0px;
+    overflow : hidden;
+    background-color: #333;
+    font-family:'Open Sans', arial,  calibri, sans-serif; 
+}
+.hotzone li{
+    float: left;
+}
+li a {
+    display:block;
+    color : white;
+    text-align: center;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    font-family:'Open Sans', arial,  calibri, sans-serif; 
+}
+li a:hover{
+    background-color: #111;
+}
+.mainhome{
+   grid-column:1/8;
+   grid-row:1/2;
+   background: url('img/mainVancouver.png') no-repeat;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   background-size: 100% 100%;
+   min-height:750px;
+   max-height:1000px;
+   max-weidth:2000px;
+   
+   font-family:'Open Sans', arial,  calibri, sans-serif; /*'droid sans', 'roboto condensed', arial,  calibri, serif;*/
+    word-spacing: 1.7em; 
+   text-align: center;
+   padding-top: 4.2em;
+   grid-gap : 0px;
+   text-shadow: 1px 1px #C06014; 
+}
+
+
+#vancouver-text{
+    text-align: center;
+    position: relative;
+    padding: 200px;
+    font-size: 4em;
+    color: white;
+    text-shadow: none;
+    word-spacing: normal;
+}
+#explore{
+     font-family:'Open Sans', arial,  calibri, sans-serif;
+     color: white;
+     font-size: 4em;
+     font-weight: 300;
+     text-align: justify;
+     text-shadow: none;
+     word-spacing: normal;
+     
+}
+.mainhome a{
+    text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   word-spacing: 2em;
+   font-size: 1.3em;
+}
+#mainhometext{
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Open Sans', arial,  calibri, sans-serif;/* 'droid sans', 'roboto condensed',* arial,  calibri;*/
+    line-height:130%;
+}
+.mainimg1{
+    grid-column: 1/5;
+    grid-row:2/3;
+    mid-width: 600px;
+    
+}
+.maintextbox1{
+    grid-column:5/8;
+    grid-row:2/3;
+    text-align: center;
+    vertical-align: middle;
+    font: 1em/180% 'Open Sans', sans-serif;
+    padding: 2em 1.5em 0 1.5em;
+    mid-width: 600px;
+    
+}
+.maintextbox2{
+    grid-column:1/3;
+    grid-row:3/4;
+   text-align: center;
+    vertical-align: middle;
+    font: 1em/180% 'Open Sans', arial,  calibri, sans-serif; 
+    padding: 2em;
+    mid-width: 600px;
+}
+.mainimg2{
+    grid-column:3/8;
+    grid-row:3/4;
+     mid-width: 600px;
+}
+.mainimg3{
+    grid-column: 1/5;
+    grid-row:4/5;
+     mid-width: 600px;
+}
+.maintextbox3{
+    grid-column:5/8;
+    grid-row:4/5;
+    text-align: center;
+    vertical-align: middle;
+    font: 1em/180% 'Open Sans', arial,  calibri, sans-serif; 
+    padding: 2em;
+    mid-width: 600px;
+}
+
+/* this lines are for content page */
+
+.menu{
+    grid-area:menu;
+
+}
+.banner{
+    grid-area:banner;
+    /*position: fixed;*/
+}
+
+.hotzone{
+    grid-area:hotzone;
+    position: relative;
+
+
+}
+.header{
+    grid-area:header;
+    background: #EDDBCD;
+    padding : 0.5em 1em;
+    border-left:  solid 10px #C06014;
+}
+.panel{
+    grid-area:panel;
+    box-shadow: 2px 2px #3A3A3A;
+}
+.panel a{
+    display: block;
+    padding:0.3em 0.5em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', arial,  calibri, sans-serif;
+}
+.panel a:hover{
+    background-color: #BFBFBF;
+}
+.panel span a:hover{
+    background-color :  #C06014;
+    color:white;
+}
+.panel a:active{
+    background-color :  #C06014;
+    color:white;
+}
+
+/*
+.panel:hover{
+    background: #f7f7f7;
+    cursor: pointer;
+    color: white;
+}*/
+.content{
+    grid-area:content;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em; 
+    background-color: #ffffff;;
+    padding:1em 2em 1em 1em;
+}
+#box{
+    margin: auto;
+    border-bottom:solid #d1d1d1 1px;
+    text-indent: 0.3em;
+    line-height: 130%;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.5em;
+}
+.footer{
+    grid-area:footer;
+    padding: 1.8em 2em 1em 2em;
+    background: #2b2a2a;
+    color : white;
+    line-height: 200%;
+    margin:0;
+    font-family:'Open Sans', arial,  calibri, sans-serif; 
+}
+.subscribe{
+     grid-area:footer;
+     
+}
+body.noborder{
+   margin: 0px;
+   grid-gap:0px;
+}
+#nohyper{
+     text-transform: none;
+}
+h2{
+    padding:0.1em 0px 0.1em 5.8em;
+    text-align: left;
+    font-size:2.7em;
+    color:#373737;
+    border-bottom-color: #C06014;
+     font-family:'Open Sans', arial,  calibri, sans-serif; 
+}
+h3{
+    font-size:2.2em;
+    color: #373737;
+}
+h2.textbox{
+    padding:0.5em;
+    text-align: center;
+    font :2em/150% 'Open Sans', arial,  calibri, sans-serif; 
+    color: #C06014;
+    text-shadow: ;
+}
+
+#learnMore:hover{
+    background: #C06014;
+    color: white;
+}
+#learnMore{
+    background-color: white;
+    color : #C06014;
+    border: solid 2px #C06014;
+    border-radius: 40px;
+    padding:13px 10px;
+    font-size:1em;
+    text-align:center;
+    text-decoration:none;
+    cursor: pointer;    
+}
+div.collapsed{
+    display: none;
+}
+table{
+    padding: 0.3em 1em 1em 1em;
+    
+    
+}
+caption{
+    font-weight: 400;
+    font-size : 1.2em;
+    padding: 0.5em;
+}
+th, td{
+    border : ;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #C06014;
+}
+th{
+    background: #C06014;
+    color: #F4F4F4;
+}
+#hover:hover{
+    background: #C06014;
+    color: #F4F4F4;
+}
+#form{
+    float: right;
+}
+.container{
+     position: relative;
+
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #C06014;
+  overflow: hidden;
+  width: 51%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+

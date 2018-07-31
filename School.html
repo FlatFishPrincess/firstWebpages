@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Jiweon Park Website</title>
+            <link rel="stylesheet" href="grid.css" type="text/css" />
+           <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Open+Sans+Condensed:300|Roboto" rel="stylesheet" />
+            <meta name="Vancouver" content="Vancouver, International students, studying, studying in Vancouver, college, ESL, university" />
+             <script type="text/javascript" src="myJava.js">
+                /*<![CDATA[*/
+               
+                /*]]>*/
+            </script>
+        </head>
+        <body>
+            <div class="wrapper">
+                <div class="menu">
+                    <a href="Homepage.html" ><img src="img/logo.png" alt="MenuImage" width="300" /></a>
+                </div>
+                <div class="hotzone">
+                    <ul>
+                        <li><a href="Studying.html">Studying</a></li>
+                        <li><a href="School.html">Schools</a></li>
+                        <li><a href="Living.html">Living</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="header" id="up">
+                       <h2>School Information </h2>
+                   </div>
+                <div class="panel">
+                    <span><a href=Homepage.html>Home</a><br /></span>
+                    <a href=#1>Vancouver adaptation test</a><br />
+                    <a href=#2>ESL schools</a><br />
+                    <a href=#3>colleges</a><br />
+                    <a href=#4>Universities</a><br />
+                    <a href=#5>Transfer System</a><br />
+                </div>
+                <div class="banner">
+                     <img alt="Right banner" name="banner" src="img/rightbanner.png" width="230px" onmouseover="this.src ='img/mcCafe.png'" onmouseout="this.src = 'img/rightBanner.png'" />
+                </div>
+                <div class="content">
+                    <a href=#up><img src="img/top.png" width="40px" alt= "Back to top" style="position: fixed; bottom: 20px; right: 40px"/></a>
+                    <div id="box">
+                        <h3 id="1">Vancouver Adaptation Test</h3>
+                        <form>
+                            <table>
+                                <tr>
+                                    <th>
+                                        You haven't decided that you are going to study in Vancouer?<br />
+                                        This questions will help you!
+                                    </th>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                <tr>
+                                    <td>
+                                         Q1. Do you like making friends from different countries?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q1" value="yes" onclick="readAnswer('a');" />yes
+                                        <input type="radio" name="q1" value="no" onclick="readAnswer('b')" />No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Q2. Are you willing to embrace different culture?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q2" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q2" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         Q3. Can you endure rainy days?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q3" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q3" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         Q4. Do you like a hokey?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q4" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q4" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         Q5. Do you want to improve your English skills or use them?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q5" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q5" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Q6. Do you want to explore in Vancouver?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q6" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q6" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                         Q7. Do you have any English exam certification?
+                                    </td>    
+                                    <td>
+                                        <input type="radio" name="q7" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q7" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Q8. Do you like outdoor activities?
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q8" value="yes" onclick="readAnswer('a')"/>yes
+                                        <input type="radio" name="q8" value="no" onclick="readAnswer('b')"/>No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Submit" onclick="displayResult(); validateForm();" />       
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div id="box">
+                       <h3 id="2">Having fun in ESL</h3>
+                       <p>
+                           This information is based on Google Map review, if you want to get more information, Click here to see more ESL school in Vancouver .
+                           As you are international student, the location is important. Downtown is the best choice as you can enjoy shopping, hanging out with your friends.
+                           Also transportation is really convenient to get down to Downtown, would recommend Downtown location!. </p>
+                           <h4>
+                                <a href="" onclick="return showInfo('outgoing')" onmouseout="this.style.textDecoration = 'none'" onmouseover="this.style.textDecoration = 'underline'">Who are interested in making many friends and activities</a>
+                           </h4>
+                           <div id="outgoing" class="collapsed">
+                                <ul>
+                                    <li>ILSC</li>
+                                    <li>CSLI</li>
+                                </ul>
+                           </div>
+                           <h4>
+                                <a href="" onclick="return showInfo('academy')" onmouseout="this.style.textDecoration ='none'" onmouseover ="this.style.textDecoration = 'underline'">
+                                Who are interested in academic English (providing IELTS, TOFLE or Cambridge Exam)</a>
+                           </h4>
+                           <div id="academy" class="collapsed">
+                                <ul>
+                                    <li>Kaplan</li> 
+                                    <li>ILAC</li>
+                                </ul>
+                            </div>
+                           <h4>
+                                <a href="" onclick="return showInfo('pathway')" onmouseout="this.style.textDecoration ='none'" onmouseover ="this.style.textDecoration = 'underline'">
+                                Who are interested pathway for university</a>
+                           </h4>
+                           <div id="pathway" class="collapsed">
+                                <ul>
+                                    <li>Kaplan</li>
+                                    <li>ILSC</li>
+                                </ul>
+                           </div>
+                      
+                    </div>
+                    <div id="box">
+                        <h3 id="3">Emplore your career path in college</h3>
+                        <form>
+                            <p>
+                                Who are interested in Film or design <br />
+                                <input type="button" value="Show colleges" onclick="showInfo('film')"/>
+                                <div class="collapsed" id="film">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                Vancouver film school<br />
+                                                Art Institute of Vancouver
+                                            </td>
+                                            <td>
+                                                <img src="img/vancouverFilm.png" width="150px" />
+                                                <img src="img/AIV.jpg" width="150px" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </p>
+                            <p>
+                                 Who are interested in technology and science<br />
+                                <input type="button" value="Show colleges" onclick="showInfo('tech')"/>
+                                <div class="collapsed" id="tech">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                BCIT<br />
+                                                Douglas college<br />
+                                                Vancouver community
+                                            </td>
+                                            <td>
+                                                <img src="img/BCIT.jpg" width="150px" />
+                                                <img src="img/Douglas.jpg" width="150" />
+                                                <img src="img/langara.png" width="150" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </p>
+                            <p>
+                                Who are interested in transferring to university<br />
+                                <input type="button" value="Show colleges" onclick="showInfo('transfer')" />
+                                 <div class="collapsed" id="transfer">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                               Langara college
+                                               Douglas college
+                                            </td>
+                                            <td>
+                                                <img src="img/langara.png" width="150" />
+                                                <img src="img/Douglas.jpg" width="150" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                 </div>
+                            </p>
+                         </form>
+                    </div>
+                    <div id="box">
+                        <h3 id="4">High quality education in University</h3>
+                        <p>
+                            <table>
+                                <tr>
+                                    <th>
+                                        High quality education in University
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        -UBC <br />
+                                        - SFU <br />
+                                        -Capilano university
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                    <div id="box">
+                        <h3 id="5">Transfer System in British Columbia</h3>
+                        <p>
+                            If you think university tuition is quite expensive or want to study with small class so that you can contact with
+                            professor more frequently, there is another way to get a degree <br /><br />
+                            <span style="font-size: 1.3em">: BC transfer  </span><br /><br />
+                            
+                            So What is transfer? <br />
+                            For the first two years, you study in colleges that are designated by BC’s post-secondary institutions, then you will study in University for the rest of years. <br /><br /><br />
+                            <span style="font-size: 1.3em"><b>WHAT IS TRANSFER? - bctransfer guide </b></span>
+                            <blockquote cite= "http://www.bctransferguide.ca"> 
+                            BC’s post-secondary institutions offer a variety of programs, and transfer opens up new possibilities for accessing these programs. For example, if a student does not meet the admission requirements for entering a BC university directly, they may be eligible to apply for admission later as a transfer student. Students can complete up to two years credit (and sometimes more!) and transfer to a university to finish their degree.
+                            Students can also transfer between non-degree programs. For example, you may start a diploma at one institution and finish it at another. Or you can take distance education courses from a variety of places, and transfer the credits back to your “home” institution. Transfer allows students to begin their studies at an institution of their choice, opening up possibilities of taking courses close to home, smaller class sizes, and more affordable tuition fees 
+                            </blockquote>
+                            for more information Click <a href="http://www.bctransferguide.ca">Here</a> 
+                        </p>
+                    </div>
+                </div>
+                 <div class="footer">
+                    <p style="float: left;">
+                        <img src="img/contact.png" width="20px" /> Contact with us <br />
+                        <img src="img/email.png" width="20px" /> rkawk3142@gmail.com <br />
+                        <img src="img/map.png" width="20px" />Address :  120-783 Ewen Ave New Westminster BC  <br />
+                        Copy right &copy; Jiweon Park
+                    
+                    <div style="float: right; width: 450px">
+                        <fieldset label="mail">
+                        <form action="mailto:rkawk3142@naver.com" method="post" enctype="application/x-www-fom-encoded">
+                            <p>Do you want to subscribe our events or updating information?<br />
+                            (Email Address)*
+                                <input type="email" name="subscribe" required placeholder="yourmail@address.com" /><br />
+                                <input type="submit" value="Subscribe" />
+                                <input type="reset" />
+                            </p>
+                    </p>
+                        </form>
+                        </fieldset>
+                    </div>
+                </div>
+        </body>
+    </html>

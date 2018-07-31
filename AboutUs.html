@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Jiweon Park Website</title>
+            <link rel="stylesheet" href="grid.css" type="text/css" />
+           <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Open+Sans+Condensed:300|Roboto" rel="stylesheet" />
+
+            <script type="text/javascript" src="myJava.js">
+                /*<![CDATA[*/
+               /*function googleMap()
+               {
+                var douglasPosition = new google.maps.LatLng(49.203806, -122.912711);
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: douglasPosition, zoom: 15};
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({position:douglasPosition});
+                marker.setMap(map);
+                }*/
+                /*]]>*/
+            </script>
+        </head>
+        <body>
+            <div class="wrapper">
+                <div class="menu">
+                    <a href="Homepage.html" ><img src="img/logo.png" alt="MenuImage" width="300" /></a>
+                </div>
+                <div class="hotzone">
+                    <ul>
+                        <li><a href=Studying.html>Studying</a></li>
+                        <li><a href=School.html>Schools</a></li>
+                        <li><a href=Living.html>Living</a></li>
+                        <li><a href=about_us.html>About Us</a></li>
+                    </ul>
+                </div>
+                <div class="header">
+                    <h2 id="up">About Us </h2>
+                </div>
+                <div class="panel">
+                    <span><a href=Homepage.html>Home</a><br /></span>
+                    <a href=#1>About me</a><br />
+                    <a href=#2>Our office</a>
+                </div>
+                <div class="banner">
+                     <img alt="Right banner" name="banner" src="img/rightbanner.png" width="230px" onmouseover="this.src ='img/mcCafe.png'" onmouseout="this.src = 'img/rightBanner.png'" />
+                </div>
+                <div class="content">
+                    <a href=#up><img src="img/top.png" width="40px" alt= "Back to top" style="position: fixed; bottom: 20px; right: 40px"/></a>
+                     <div id="box">
+                            <h2 id="1">Jiweon Park</h2>
+                            <p>Hi! This is Jiweon Park. I'm studying computer science in Douglas college, and this website is for the assignment.</p>
+                            <div class="container">
+                            <img src="img/Jiweon_Park.jpg" width="50%" />
+                                <div class="overlay">
+                                <div class="text">This is me</div>
+                                </div><br />
+                            </div>
+                            <span style="font-size;0.2em;">&lt; Deep Cove, one of the best places in Vancvouer &gt;</span>
+                    </div>
+                    <div id="box">
+                        <h2 id="2">Our office</h2>
+                        <div id="map" style="width:100%;height:500px"></div>
+                        <br />If you need any help or contact with us, please visit our office. 
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfZ9bRd5Gw9KwlEqn_aWdELYUj5x_nMG4&callback=googleMap"></script>
+                    </div>
+                       
+                </div>
+                    <div class="footer">
+                    <p style="float: left;">
+                        <img src="img/contact.png" width="20px" /> Contact with us <br />
+                        <img src="img/email.png" width="20px" /> rkawk3142@gmail.com <br />
+                        <img src="img/map.png" width="20px" />Address :  120-783 Ewen Ave New Westminster BC  <br />
+                        Copy right &copy; Jiweon Park
+                    
+                    <div style="float: right; width: 450px">
+                        <fieldset label="mail">
+                        <form action="mailto:rkawk3142@naver.com" method="post" enctype="application/x-www-fom-encoded">
+                            <p>Do you want to subscribe our events or updating information?<br />
+                            (Email Address)*
+                                <input type="email" name="subscribe" required placeholder="yourmail@address.com" /><br />
+                                <input type="submit" value="Subscribe" />
+                                <input type="reset" />
+                            </p>
+                    </p>
+                        </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
