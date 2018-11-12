@@ -1,4 +1,4 @@
 # firstWebpages
 
-my first website! 
-this is my first assignment in html class 
+My first Web
+HTML final assignment 
