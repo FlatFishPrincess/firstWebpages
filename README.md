@@ -1,4 +1,4 @@
 # firstWebpages
 
-My first Web
-HTML final assignment 
+My first Webpages
+This is final assignment for CSIS 1280 
